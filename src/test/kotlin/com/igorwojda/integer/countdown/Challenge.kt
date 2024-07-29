@@ -4,7 +4,15 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun countDown(n: Int): List<Int> {
-    TODO("Add your solution here")
+    val list = mutableListOf<Int>()
+
+    var i = n
+
+    while (i >= 0) {
+        list.add(i)
+        i--
+    }
+    return list
 }
 
 private class Test {
