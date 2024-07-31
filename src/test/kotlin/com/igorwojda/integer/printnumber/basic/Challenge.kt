@@ -4,7 +4,12 @@ import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun printNumber(n: Int): List<Int> {
-    TODO("Add your solution here")
+    val list = mutableListOf<Int>()
+
+    for (i in 1..n) {
+        list.add(i)
+    }
+    return list.asReversed()
 }
 
 private class Test {
